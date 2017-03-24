@@ -23,6 +23,15 @@ router.post("/create", function(req, res){
 })
 
 
+router.put("/delete/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+
+  burger.delete(condition, function() {
+    res.redirect("/");
+  });
+});
+
+
 // Export routes for server.js to use.
 module.exports = router;
 

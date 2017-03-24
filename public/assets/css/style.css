@@ -1,3 +1,9 @@
 #banner {
-    background-image: url(""/assets/images/burger.png"");
+    background-image: url("/assets/images/burger.png");
+}
+
+
+#laBurger{
+
+	color: red;
 }
