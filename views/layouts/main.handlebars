@@ -3,14 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  type="text/css"/>
 		<title>Eat Da Burger!</title>
 	</head>
-	<body>
+	<body class="text-center">
 			
-<form action="/burgers/create" method="POST">
-	<input type="text" name="bname" placeholder="Enter the name of the burger here"></input>
-	<input type="submit"></input>
+			<div class="jumbotron" id="banner">
+  <h1>Eat Da Burger</h1>
+ <img src="/assets/images/burger.png" alt=""> 
+  <form action="/burgers/create" method="POST">
+	
+	
+<div>
+ <textarea rows="4" cols="30" name="bname" placeholder="Enter Burger Name">
+
+</textarea> 
+</div>
+	<input class="btn btn-primary btn-lg" type="submit"></input>
+	
+
 </form>
+</div>
+
 		{{{ body }}}
 	</body>
 </html>
