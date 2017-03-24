@@ -14,8 +14,10 @@ router.get("/", function(req, res) {
 
 router.post("/create", function(req, res){
 	// res.send(req.body);
-
-	burger.create(cols, vals, function(response){
+    
+    
+    
+	burger.create(['bname'], [req.body.bname], function(response){
 		res.redirect('/');
 	});
 })
